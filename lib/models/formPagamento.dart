@@ -1,22 +1,20 @@
 class FormPagamento {
   String forma;
 
-  // Construtor
   FormPagamento({required this.forma});
 
-  // Calcula desconto baseado na forma de pagamento
   double calcularDesconto(double valor) {
     double desconto = 0;
 
     switch (forma.toLowerCase()) {
       case 'cartao':
-        desconto = 0.05; // 5% de desconto
+        desconto = 0.0; 
         break;
       case 'pix':
-        desconto = 0.10; // 10% de desconto
+        desconto = 0.0;
         break;
       case 'dinheiro':
-        desconto = 0.0; // sem desconto
+        desconto = 0.10; 
         break;
       default:
         desconto = 0.0;

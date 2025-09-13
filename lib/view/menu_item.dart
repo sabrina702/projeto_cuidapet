@@ -1,10 +1,10 @@
 import 'dart:io';
 
 import 'package:projeto_cuidapet/controllers/cliente_controller.dart';
+import 'package:projeto_cuidapet/models/carrinho.dart';
 
 class MenuItem {
-  ClienteController controller = ClienteController();
-  void exibir() {
+  void exibir(ClienteController controller, Carrinho carrinho) {
     while (true) {
       print('\n--- Menu Item ---');
       print('1 - Adicionar ao carrinho');
@@ -30,8 +30,7 @@ class MenuItem {
             continue;
           }
 
-          // Chama o método do Controller para adicionar ao carrinho
-          bool sucesso = controller.adicionarAoCarrinho(carrinho, codigo);
+          bool sucesso = controller.adicionarItemAoCarrinho(carrinho, codigo);
 
           if (!sucesso) {
             print('Código inválido ou item não encontrado!');

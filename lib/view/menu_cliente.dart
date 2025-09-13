@@ -2,14 +2,16 @@ import 'dart:io';
 import 'package:projeto_cuidapet/controllers/cliente_controller.dart';
 import 'package:projeto_cuidapet/models/carrinho.dart';
 import 'package:projeto_cuidapet/models/cliente.dart';
+import 'package:projeto_cuidapet/models/sessao.dart';
 import 'package:projeto_cuidapet/view/menu_item.dart';
 
-void menuCliente() {
+void menuCliente(Sessao sessao) {
   stdout.write('\nBem-vindo! Por favor, digite seu nome: ');
   String nomeCliente = stdin.readLineSync()!;
   Cliente cliente = Cliente(nome: nomeCliente);
   Carrinho carrinho = Carrinho();
   ClienteController controller = ClienteController();
+  
 
   print('\nOlá, ${cliente.nome}! Que bom ter você aqui.');
   
@@ -28,18 +30,18 @@ void menuCliente() {
       case 1:
         print('\n');
         controller.listarProdutos(carrinho);
-        MenuItem().exibir();
+        MenuItem().exibir(controller, carrinho);
         break;
       case 2:
         print('\n');
         controller.listarServicos(carrinho);
-        MenuItem().exibir();
+        MenuItem().exibir(controller, carrinho);
         break;
       case 3:
         controller.listarCarrinho(carrinho);
         break;
       case 4:
-        
+        controller.finalizarCarrinho(carrinho, sessao, cliente);
         break;
       case 0:
         print('Voltando ao menu principal...');

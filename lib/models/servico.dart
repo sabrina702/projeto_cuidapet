@@ -5,9 +5,9 @@ class Servico extends Item {
 
   static List<Servico> listarServicos() {
     return [
-      Servico(codigo: 'S01', nome: 'Banho', preco: 35.0),
-      Servico(codigo: 'S02', nome: 'Tosa', preco: 50.0),
-      Servico(codigo: 'S03', nome: 'Consulta Veterinária', preco: 70.0),
+      Servico(codigo: 01, nome: 'Banho', preco: 35.0),
+      Servico(codigo: 02, nome: 'Tosa', preco: 50.0),
+      Servico(codigo: 03, nome: 'Consulta Veterinária', preco: 70.0),
     ];
   }
 }
