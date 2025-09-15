@@ -5,5 +5,6 @@ class Cliente {
   Carrinho carrinho;
 
   Cliente({required this.nome}) : carrinho = Carrinho();
+  
 
 }
