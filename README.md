@@ -99,5 +99,8 @@ Ao sair do sistema, você pode exibir o resumo da Sessao:
 
 ---
 
-# Wiki
-https://github.com/sabrina702/projeto_cuidapet.wiki.git
+## 📚 Wiki do Projeto
+
+Toda a documentação detalhada do **CuidaPet** está disponível na Wiki do projeto:
+
+[📖 Acessar Wiki do CuidaPet](https://github.com/sabrina702/projeto_cuidapet/wiki)
