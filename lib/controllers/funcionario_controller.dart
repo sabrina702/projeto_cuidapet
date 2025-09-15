@@ -1,9 +1,10 @@
 import 'dart:io';
 
-import 'package:projeto_cuidapet/models/formPagamento.dart';
-import 'package:projeto_cuidapet/models/funcionario.dart';
-import 'package:projeto_cuidapet/models/sessao.dart';
-import 'package:projeto_cuidapet/view/menu_formPagamento.dart';
+import '../models/formPagamento.dart';
+import '../models/funcionario.dart';
+import '../models/sessao.dart';
+import '../view/menu_formPagamento.dart';
+
 
 class FuncionarioController {
   static const String loginCorreto = 'admin';

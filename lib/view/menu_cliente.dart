@@ -1,9 +1,10 @@
 import 'dart:io';
-import 'package:projeto_cuidapet/controllers/cliente_controller.dart';
-import 'package:projeto_cuidapet/models/carrinho.dart';
-import 'package:projeto_cuidapet/models/cliente.dart';
-import 'package:projeto_cuidapet/models/sessao.dart';
-import 'package:projeto_cuidapet/view/menu_item.dart';
+
+import '../controllers/cliente_controller.dart';
+import '../models/carrinho.dart';
+import '../models/cliente.dart';
+import '../models/sessao.dart';
+import 'menu_item.dart';
 
 void menuCliente(Sessao sessao) {
   stdout.write('\nBem-vindo! Por favor, digite seu nome: ');

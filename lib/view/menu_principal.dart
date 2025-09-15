@@ -1,10 +1,11 @@
 import 'dart:io';
 
-import 'package:projeto_cuidapet/controllers/funcionario_controller.dart';
-import 'package:projeto_cuidapet/models/funcionario.dart';
-import 'package:projeto_cuidapet/models/sessao.dart';
-import 'package:projeto_cuidapet/view/menu_cliente.dart';
-import 'package:projeto_cuidapet/view/menu_funcionario.dart';
+import '../controllers/funcionario_controller.dart';
+import '../models/funcionario.dart';
+import '../models/sessao.dart';
+import 'menu_cliente.dart';
+import 'menu_funcionario.dart';
+
 
 void menuPrincipal() {
   Sessao sessao = Sessao();

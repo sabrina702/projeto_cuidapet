@@ -1,7 +1,8 @@
 import 'dart:io';
 
-import 'package:projeto_cuidapet/controllers/cliente_controller.dart';
-import 'package:projeto_cuidapet/models/carrinho.dart';
+import '../controllers/cliente_controller.dart';
+import '../models/carrinho.dart';
+
 
 class MenuItem {
   void exibir(ClienteController controller, Carrinho carrinho) {

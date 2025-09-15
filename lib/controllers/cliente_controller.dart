@@ -1,13 +1,14 @@
-import 'package:projeto_cuidapet/models/cliente.dart';
-import 'package:projeto_cuidapet/models/formPagamento.dart';
-import 'package:projeto_cuidapet/models/recibo.dart';
-import 'package:projeto_cuidapet/models/sessao.dart';
-import 'package:projeto_cuidapet/view/menu_formPagamento.dart';
 
+
+import '../models/cliente.dart';
+import '../models/formPagamento.dart';
 import '../models/produto.dart';
+import '../models/recibo.dart';
 import '../models/servico.dart';
 import '../models/carrinho.dart';
 import '../models/item.dart';
+import '../models/sessao.dart';
+import '../view/menu_formPagamento.dart';
 
 class ClienteController {
   void listarProdutos(Carrinho carrinho) {

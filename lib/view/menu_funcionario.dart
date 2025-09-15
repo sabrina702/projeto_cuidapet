@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:projeto_cuidapet/controllers/funcionario_controller.dart';
-import 'package:projeto_cuidapet/models/sessao.dart';
+import '../controllers/funcionario_controller.dart';
+import '../models/sessao.dart';
 
 void menuFuncionario(Sessao sessao) {
   int opcao;
