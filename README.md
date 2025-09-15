@@ -96,3 +96,8 @@ Após autenticação, aparece o Menu Funcionário:
 Ao sair do sistema, você pode exibir o resumo da Sessao:
 * Número total de clientes atendidos
 * Valor total faturado
+
+---
+
+# Wiki
+https://github.com/sabrina702/projeto_cuidapet.wiki.git
